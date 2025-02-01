@@ -1,2 +1,1 @@
-# vues
-Vue Full Stack Daaps
+# Vue and Web3
