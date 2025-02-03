@@ -4,9 +4,41 @@ When the donate function is called, trigger a selfdestruct in the contract!
 
 */
 
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
+contract Contract {
 
+    address public owner;
 
+    address public charity;
+
+    constructor(address _c) {
+
+        owner = msg.sender;
+
+        charity = _c;
+    }
+    
+    receive() external payable {
+        
+    }
+
+    function tip() public payable {
+
+        (bool met, ) = owner.call{value: msg.value}("");
+    }
+
+    function donate() public payable {
+
+        (bool met, ) = charity.call{value: address(this).balance}("");
+
+        require(met);
+
+        selfdestruct(payable(owner));
+    }
+    
+}
 
 
 
