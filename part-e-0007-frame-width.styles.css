@@ -1,0 +1,14 @@
+/* The frame is much too wide.
+
+In .frame, set its width to 500 pixels. */
+
+.canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+}
+
+.frame {
+  border: 50px solid black;
+  width: 500px;
+}
