@@ -1,0 +1,32 @@
+/*
+Write a new rule that targets .one and set its width to 425 pixels.
+Now set the height for .one to 150 pixels
+Set the background-color of .one to #efb762.
+Use margins to position the .one element on the canvas.
+Add the shorthand margin property with a vertical margin of 20px and a horizontal margin of auto.
+
+Now .one is centered horizontally, but its top margin is pushing past the canvas and onto the frame's border, shifting the entire canvas down 20 pixels.
+Add padding of 1px to the .canvas element to give the .one element something solid to push off of.
+*/
+
+.canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+  padding: 1px;
+}
+
+.frame {
+  border: 50px solid black;
+  width: 500px;
+  padding: 50px;
+  margin: 20px auto;
+}
+
+.one {
+  width: 425px;
+  height: 150px;
+  background-color: #efb762;
+  margin: 20px auto;
+}
+
