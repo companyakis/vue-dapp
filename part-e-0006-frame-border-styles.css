@@ -1,0 +1,15 @@
+/*
+Write a new rule using the .frame class selector.
+
+Use the border shorthand declaration to give the .frame element a solid, black border with a width of 50px.
+*/
+
+.canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+}
+
+.frame {
+  border: 50px solid black;
+}
