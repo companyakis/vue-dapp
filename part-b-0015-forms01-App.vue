@@ -1,6 +1,6 @@
 <script setup>
 
-import EmployeeContact from './components/EmpContact/EmployeeContact.vue';
+import CustomerContact from './components/CusContact/CustomerContact.vue';
 
 import Header from './components/Fixed/Header.vue';
 
@@ -8,9 +8,10 @@ import Header from './components/Fixed/Header.vue';
 </script>
 
 <template>
+  
   <Header />
 
-  <EmployeeContact />
+  <CustomerContact />
   
 </template>
 
