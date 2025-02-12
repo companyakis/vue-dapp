@@ -1,0 +1,24 @@
+/*
+A contract variable in Solidity allows a contract to interact with another contract on the blockchain by calling its functions and accessing its state variables.
+
+A contract variable is like a one-way bridge between two contracts. It allows one to interact with the other, accessing all the information and making functions calls in the other contract.
+
+*/
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract FinTech {
+
+  // Define a contract type variable of SomeData
+
+  SomeData public data;
+}
+
+contract SomeData {
+  
+  uint16 public year;
+
+  string public founder;
+}
+
